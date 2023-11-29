@@ -1,13 +1,13 @@
 const { createApp } = Vue
 
-  createApp({
+createApp({
     data() {
-      return {
-        url:"http://127.0.0.1:5000/productos", // Retorna todos los registro de la tabla productos
-        productos:[],
-        error:false,
-        cargando:true
-      }
+        return {
+            url:"http://127.0.0.1:5000/productos", // Retorna todos los registro de la tabla productos
+            productos:[],
+            error:false,
+            cargando:true
+        }
     },
     // Se llama después de que la instancia haya 
     // terminado de procesar todas las opciones relacionadas con el estado.
@@ -43,11 +43,6 @@ const { createApp } = Vue
                     location.reload();
                 })
         }
-
-
     },
     
-
-
-
-  }).mount('#app')
+}).mount('#app')
