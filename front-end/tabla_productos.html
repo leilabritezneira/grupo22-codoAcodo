@@ -3,28 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tabla_productos.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Tabla de productos</title>
 </head>
 <body>
 
-    <header id="header"></header>
-
+    <header id="header" class="bg-info shadow p-4 font-weight-bold text-center h4"></header>
     <main>
-
         <section class="container">
             <div id="app" >
-
-                <!-- Botón Nuevo -->
-                <a class="nuevo" href="templates/ingresar_producto.html">Nuevo</a>
+                <a class="btn btn-primary" href="templates/ingresar_producto.html">Nuevo</a>
 
                 <section v-if="error">Lo sentimos se produjo un error</section>
                 <section v-else>
                     <section v-if="cargando">
                         <p>Cargando .....</p>
-
                     </section>
-
                     <section v-else>
                         
                         <div >
@@ -50,7 +44,7 @@
                                             <img :src="producto.imagen" alt="">
                                         </td>
                                         <td>
-                                            <button type="button"  v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            <button type="button" v-on:click="eliminar(producto.id)">Eliminar</button>
                                         </td>
                                         <td>
                                             <a class="boton" :href="'templates/editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen">Editar</a>
@@ -63,10 +57,7 @@
                 </section>
             </div>
         </section>
-
     </main>
-
-    <footer></footer>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/tabla_productos.js"></script>
