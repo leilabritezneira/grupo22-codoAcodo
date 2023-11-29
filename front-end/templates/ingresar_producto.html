@@ -4,53 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/ingresar_producto.css">
-    <link rel="stylesheet" href="../css/tabla_productos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Registrar</title>
 </head>
 
 <body>
-
-    <header id="header"></header>
+    <header id="header" class="bg-info shadow p-4 font-weight-bold text-center h4"></header>
 
     <main>
-
-        <section>
-            <div class="container-form">
-
-                <form action="">
-                    <div class="entrada">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
+        <section class="container text-white">
+            <div class="container-form m-5 p-5 border border-info bg-light rounded shadow-lg">
+                <form action="" class="px-5">
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label class="m-2" for="nombre">Nombre:</label>
+                        <input class="m-2 border rounded" type="text" name="nombre" id="nombre">
                     </div>
-
-                    <div class="entrada">
-                        <label for="precio">Precio:</label>
-                        <input type="number" name="precio" id="precio">
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label class="m-2" for="precio">Precio:</label>
+                        <input class="m-2 border rounded" type="number" name="precio" id="precio">
                     </div>
-
-                    <div class="entrada">
-                        <label for="stock">Stock:</label>
-                        <input type="number" name="stock" id="stock">
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label class="m-2" for="stock">Stock:</label>
+                        <input class="m-2 border rounded" type="number" name="stock" id="stock">
                     </div>
-
-                    <div class="entrada">
-                        <label for="imagen">Imagen:</label>
-                        <input type="text" name="imagen" id="imagen">
+                    <div class="text-secondary m-3 d-flex justify-content-center">
+                        <label class="m-2" for="imagen">Imagen:</label>
+                        <input class="m-2 border rounded" type="text" name="imagen" id="imagen">
                     </div>
-
-                    <div class="entrada">
-                        <button class="modificar" type="button" onclick="guardar()">Guardar</button>
+                    <div class="text-secondary m-5">
+                        <button class="btn btn-primary d-block m-auto" type="button" onclick="guardar()">Guardar</button>
                     </div>
-
                 </form>
-
             </div>
         </section>
-
     </main>
-
-    <footer></footer>
 
     <script src="../js/ingresar_producto.js"></script>
     <script src="../js/header.js"></script>
