@@ -44,7 +44,7 @@
                                             <img :src="producto.imagen" alt="">
                                         </td>
                                         <td>
-                                            <button type="button" class="btn btn-outline-danger m-5 d-inline-flex justify-content-center" v-on:click="eliminar(producto.id)">Eliminar</button>
+                                            <a type="button" class="btn btn-outline-danger m-5 d-inline-flex justify-content-center" v-on:click="eliminar(producto.id)">Eliminar</a>
                                         </td>
                                         <td>
                                             <a class="btn btn-outline-primary m-5 d-inline-flex justify-content-center" :href="'templates/editar_producto.html?id='+ producto.id+'&nombre=' +producto.nombre+ '&precio='+producto.precio+'&stock='+producto.stock +  '&imagen='+producto.imagen">Editar</a>
